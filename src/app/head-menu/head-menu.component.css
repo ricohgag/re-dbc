@@ -44,7 +44,11 @@ ul {
     background-color: #ffffff;
   }
   
-  #menus-ul li a{
-    text-align: center;
-    height: 25px;
+  .display-ul {
+    float: left;
+    z-index: 10;
+  }
+
+  li:hover {
+    background-color: #cbc7d3;
   }
