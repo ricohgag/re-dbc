@@ -1,0 +1,50 @@
+
+
+ul {
+    list-style-type: none; /*清除无序列表前的小点*/
+    padding-left: 0px;/*左边距，使li看起来在中间*/
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    height: 20px;
+  }
+  
+  li{
+    float: left;
+    width: 46px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  a:link,a:visited{ /*鼠标未点击和点击过时的样式*/
+    display: block;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    /*line-height: 12px; /*li行高*/
+    /* padding: 5px; */
+    text-decoration: none; /*去下划线*/
+  }
+  
+  a:hover{ /*鼠标移动到点击位时的样式，active指点击过后的样式*/
+    background-color: #cbc7d3;
+  }
+  
+  
+  #menus-ul {
+    display: none;
+    height: 75px;
+    background-color: #ffffff;
+    border: 1px #000000 solid;
+  }
+  
+  #menus-ul li {
+    height: 25px;
+    background-color: #ffffff;
+  }
+  
+  #menus-ul li a{
+    text-align: center;
+    height: 25px;
+  }
