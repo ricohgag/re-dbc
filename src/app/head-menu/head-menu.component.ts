@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { NewConnectComponent } from '../new-connect/new-connect.component';
 
 @Component({
   selector: 'app-head-menu',
   standalone: true,
-  imports: [],
+  imports: [NewConnectComponent],
   templateUrl: './head-menu.component.html',
   styleUrl: './head-menu.component.css'
 })
@@ -22,5 +23,16 @@ export class HeadMenuComponent {
       menus.style.display = "none";
     }
     
+  }
+
+  /* 点击按钮，打开新建连接页面 */
+  openNewConnect() {
+    const newConnect = document.getElementById("new-connect");
+    console.log("newConnect", newConnect);
+    if (newConnect == null) {
+      return
+    }
+
+    newConnect.style.display = "block";
   }
 }

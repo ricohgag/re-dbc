@@ -5,9 +5,9 @@
         <li class="menu">
         <a href="#" (mouseover)="switchMenuDisplay(1)">菜单</a>
         <ul id="menus-ul" class="display-ul">
-            <li>连接</li>
-            <li>打开</li>
-            <li>退出</li>
+            <div (click)="openNewConnect()" class="display-ul"><a href="#">连接</a></div>
+            <div class="display-ul"><a href="#">打开</a></div>
+            <div class="display-ul"><a href="#">退出</a></div>
         </ul>
         </li>
         <li><a href="#">视窗</a></li>

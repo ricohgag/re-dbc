@@ -6,8 +6,16 @@
     border: 1px solid #000000;
     height: 100vh;
     width: 180px;
-    float: left;
-    z-index: 1;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
+.right-container{
+    border: 1px solid #000000;
+    height: 100vh;
+    width: 80%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}

@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { invoke } from "@tauri-apps/api/tauri";
 import { HeadMenuComponent } from './head-menu/head-menu.component';
 import { ConnectPanelComponent } from './connect-panel/connect-panel.component';
+import { NewConnectComponent } from './new-connect/new-connect.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeadMenuComponent, ConnectPanelComponent],
+  imports: [CommonModule, RouterOutlet, HeadMenuComponent, ConnectPanelComponent, NewConnectComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
