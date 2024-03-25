@@ -11,7 +11,7 @@ import { NewConnectComponent } from '../new-connect/new-connect.component';
 export class HeadMenuComponent {
   /* 点击按钮，下拉菜单在 显示/隐藏 之间切换 */
   switchMenuDisplay(state:number) {
-    const menus = document.getElementById("menus-ul");
+    const menus = document.getElementById("menuList");
     console.log("menus", menus);
     if (menus == null) {
       return

@@ -1,18 +1,15 @@
-<div class="head-menus">
-    <div class="nav1">
-        <!--横向导航栏-->
-        <ul class=".head-ul">
-        <li class="menu">
+    <!--横向导航栏-->
+<div class="headMenus">
+    <div class="menus">
         <a href="#" (mouseover)="switchMenuDisplay(1)">菜单</a>
-        <ul id="menus-ul" class="display-ul">
-            <div (click)="openNewConnect()" class="display-ul"><a href="#">连接</a></div>
-            <div class="display-ul"><a href="#">打开</a></div>
-            <div class="display-ul"><a href="#">退出</a></div>
-        </ul>
-        </li>
-        <li><a href="#">视窗</a></li>
-        <li><a href="#">工具</a></li>
-        <li><a href="#">帮助</a></li>
-        </ul>
+        <div id="menuList" class="displayMenu">
+            <div (click)="openNewConnect()" ><a href="#">连接</a></div>
+            <div><a href="#">打开</a></div>
+            <div><a href="#">退出</a></div>
+        </div>
     </div>
-<div>
+
+    <div class="menus"><a href="#">视窗</a></div>
+    <div class="menus"><a href="#">工具</a></div>
+    <div class="menus"><a href="#">帮助</a></div>
+</div>

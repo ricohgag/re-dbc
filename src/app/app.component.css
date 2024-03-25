@@ -1,5 +1,6 @@
 .mid-container {
     padding: 10px 0;
+    display: flex;
 }
 
 .left-container{
@@ -7,8 +8,6 @@
     height: 100vh;
     width: 180px;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 .right-container{
@@ -16,6 +15,4 @@
     height: 100vh;
     width: 80%;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 }

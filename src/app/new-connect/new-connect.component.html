@@ -1,30 +1,38 @@
-<!-- 构建一个数据库连接页面，需要填写数据库连接名，Host, 端口号，账号和密码等 -->
+
 <div id="new-connect">
     <h2>新建连接</h2>
     <form>
         <div class="form-group">
         <label for="connectionName">连接名</label>
-        <input type="text" class="form-control" id="connectionName" placeholder="Enter connection name">
+        <input type="text" [(ngModel)]="connectModel.connectName" name="connectionName" placeholder="Enter connection name">
         </div>
         <div class="form-group">
         <label for="host">Host</label>
-        <input type="text" class="form-control" id="host" placeholder="Enter host">
+        <input type="text" [(ngModel)]="this.connectModel.host" name="host" placeholder="Enter host">
         </div>
         <div class="form-group">
-            <label for="host">端口</label>
-            <input type="text" class="form-control" id="port" placeholder="Enter host">
+            <label for="port">端口</label>
+            <input type="text" [(ngModel)]="connectModel.port" name="port" placeholder="Enter port">
             </div>
         <div class="form-group">
             <label for="username">账号</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter host">
+            <input type="text" name="username" [(ngModel)]="connectModel.username" placeholder="Enter username">
         </div>
         <div class="form-group">
             <label for="password">密码</label>
-            <input type="text" class="form-control" id="password" placeholder="Enter host">
+            <input type="text" name="password" [(ngModel)]="connectModel.password" placeholder="Enter password">
         </div>
 
-        <button type="button" class="btn btn-primary">测试</button>
+        <button type="button" (click)="testConnect()" class="btn btn-primary">测试</button>
         <button type="button" class="btn btn-primary">连接</button>
         <button type="button" (click)="cancelNewConnect()" class="btn btn-primary">取消</button>
     </form>
+
+    <div class="container">
+
+        <form class="row" (submit)="testConnect()">
+          <input #greetInput id="greet-input" placeholder="Enter a name..." />
+          <button type="submit">Greet</button>
+        </form>
+      </div>
 </div>

@@ -1,50 +1,37 @@
 
-
-ul {
-    list-style-type: none; /*清除无序列表前的小点*/
+  .headMenus {
     padding-left: 0px;/*左边距，使li看起来在中间*/
     background: #282826;
-    width: 100%;
     text-align: center;
     margin: 0px;
     height: 24px;
+    display: flex;
   }
   
-  li{
-    float: left;
-    width: 46px;
+  .menus{
+    position: relative;
     height: 100%;
     background-color: #282826;
   }
-  
-  a:link,a:visited{ /*鼠标未点击和点击过时的样式*/
+
+  .menus a:link,a:visited{ /*鼠标未点击和点击过时的样式*/
     display: block;
     color: #5E5E5C;
     text-align: center;
     text-decoration: none;
   }
-  
-  
-  #menus-ul {
-    display: none;
-    height: 75px;
-    background-color: #282826;
-    border: 1px #000000 solid;
-  }
-  
-  .display-ul li {
-    height: 25px;
-    background-color: #282826;
-    color: #DDDDDD;
-    border: none;
-  }
-  
-  .display-ul:hover {
+
+  /* 移动到菜单a标签时，改变a标签的背景颜色 */
+  .menus a:hover {
     background-color: #cbc7d3;
   }
 
-  /* 移动到li时，改变li的背景颜色 */
-  li:hover {
-    background-color: #cbc7d3;
+  .menus a{
+    padding: 0 8px;
   }
-        
+
+  .displayMenu{
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+  }
